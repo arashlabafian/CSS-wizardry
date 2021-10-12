@@ -1,0 +1,35 @@
+.btn {
+  border: 2px solid #808080;
+  cursor: pointer;
+  display: inline-block;
+  margin: 15px 30px;
+  position: relative;
+  padding: 25px 70px 25px 8px;
+  background-image: linear-gradient(to right, #f2af64, #f0a355, #ef9544);
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+.btn:active {
+  top: 2px;
+}
+
+.btn:before {
+  top: 11%;
+  right: 5%;
+  content: "";
+  position: absolute;
+  z-index: 100;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.btn:after {
+  position: absolute;
+  right: 16.4%;
+  content: url(./x-Icon.svg);
+  top: 34%;
+  z-index: 200;
+}
